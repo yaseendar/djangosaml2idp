@@ -136,7 +136,8 @@ LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-BASE_URL = 'http://localhost:9000/idp'
+
+BASE_URL = 'http://localhost:9000/pfizer/idp'
 
 SAML_IDP_CONFIG = {
     'debug' : DEBUG,
@@ -175,7 +176,7 @@ SAML_IDP_CONFIG = {
 
 
 SAML_IDP_SPCONFIG = {
-    'http://localhost:8000/saml2/metadata/': {
+    'http://localhost:8000/sso/metadata/': {
         'processor': 'djangosaml2idp.processors.BaseProcessor',
         'attribute_mapping': {
             # DJANGO: SAML

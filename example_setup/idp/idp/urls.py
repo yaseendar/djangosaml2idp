@@ -8,7 +8,7 @@ from . import views
 app_name = 'example_idp'
 
 urlpatterns = [
-    path('idp/', include('djangosaml2idp.urls', namespace='djangosaml2')),
+    path('pfizer/idp/', include('djangosaml2idp.urls', namespace='djangosaml2')),
     path('login/', auth_views.LoginView.as_view(template_name='idp/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view()),
     path('admin/', admin.site.urls),
